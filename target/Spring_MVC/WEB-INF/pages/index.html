@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="windows-1251">
+    <title>Hello World!</title>
+</head>
+<body >
+<style type="text/css">
+    DIV {
+        width: 1000px;
+        margin: 10px auto;
+        text-align: center;
+        background: #ffcc00;
+    }
+</style>
+<div>
+    <th:block th:each="msg : ${messages}">
+        <h1 th:text="${msg}"></h1>
+    </th:block>
+
+    <table cellspacing="1" cellpadding="3" align="center" border="1" width="100%">
+        <tbody>
+        <tr align="center">
+            <th width="10%">
+                № (id)
+            </th>
+            <th width="30%">
+                Name
+            </th>
+            <th width="20%">
+                LastName
+            </th>
+            <th width="20%">
+                Phone Number
+            </th>
+            <th width="20%">
+                Email
+            </th>
+        </tr>
+        <tr cellpading="10" align="center">
+            <td>
+                Игнатьев С.П.
+            </td>
+            <td>
+                врач-акушер-гинеколог
+            </td>
+            <td>
+                высшее медицинское, АГМИ. 1982 г.
+            </td>
+            <td>
+                Высшая. «Акушерство и гинекология»
+            </td>
+            <td>
+                Сертификат по специальности«Акушерство и гинекология» до декабря 2021 г.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+hibernate\Main.class
+hibernate\service\UserServiceImpl.class
+hibernate\model\User.class
+web\config\AppInit.class
+hibernate\dao\UserDao.class
+hibernate\dao\UserDaoImpl.class
+web\config\WebConfig.class
+hibernate\config\AppConfig.class
+hibernate\service\UserService.class
+web\controller\Index.class
